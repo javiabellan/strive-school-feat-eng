@@ -5,68 +5,21 @@ Content for 2 weeks of class (10 days).
 <table>
   <!----------------------------------- Week 1 ----------------------------------->
   <tr>
-    <th width="200" rowspan="5"><h3>Week 1:<br>Pure Feature Engeneering</h3></th>
-    <td width="400"><a href="#">1. Basic encodings (MinMaxScaler, StandardScaler, Ordinal Encoding, OneHot Encoding, ColumnTransformer)</a></td>
-    <td width="144"><a href="#">PDF Slides</a></td>
-    <td width="144"><a href="#">Notebook</a></td>
-    <td width="144"><a href="#">Exercise</a></td>
-  </tr>
-  <tr>
-    <td width="400"><a href="#">2. Missings & Outliers</a></td>
-    <td width="144"><a href="#">PDF Slides</a></td>
-    <td width="144"><a href="#">Notebook</a></td>
-    <td width="144"><a href="#">Exercise</a></td>
-  </tr>
-  <tr>
-    <td width="400"><a href="#">3. FE for Several tables (manually merge & join, featuretools)</a></td>
-    <td width="144"><a href="#">PDF Slides</a></td>
-    <td width="144"><a href="#">Notebook</a></td>
-    <td width="144"><a href="#">Exercise</a></td>
-  </tr>
-  <tr>
-    <td width="400"><a href="#">4. FE for Time Series</a></td>
-    <td width="144"><a href="#">PDF Slides</a></td>
-    <td width="144"><a href="#">Notebook</a></td>
-    <td width="144"><a href="#">Exercise</a></td>
-  </tr>
-  <tr>
-    <td width="400"><a href="#">5. FE for NLP (BoW, TFIDF, N-Grams)</a></td>
-    <td width="144"><a href="#">PDF Slides</a></td>
-    <td width="144"><a href="#">Notebook</a></td>
-    <td width="144"><a href="#">Exercise</a></td>
-  </tr>
+    <th width="200" rowspan="5"><h3>Week 1:<br>Pure Feature Engineering</h3></th>
+      <td><a href="#">1. Basic encodings (MinMaxScaler, StandardScaler, Ordinal Encoding, OneHot Encoding, ColumnTransformer)</a></td></tr>
+  <tr><td><a href="#">2. Missings & Outliers (Drop vars, impute vars)</a></td></tr>
+  <tr><td><a href="#">3. FE for Several tables (manually merge & join, featuretools)</a></td></tr>
+  <tr><td><a href="#">4. FE for Time Series (lag features, tsfresh)</a></td></tr>
+  <tr><td><a href="#">5. FE for NLP (BoW, TFIDF, N-Grams)</a></td></tr>
+  
   <!----------------------------------- Week 2 ----------------------------------->
   <tr>
     <th width="200" rowspan="5"><h3>Week 2:<br>FE applied to ML models</h3></th>
-    <td width="400"><a href="#">6. Validation strategies (simple split, CrossValidation, Stratification)</a></td>
-    <td width="144"><a href="#">PDF Slides</a></td>
-    <td width="144"><a href="#">Notebook</a></td>
-    <td width="144"><a href="#">Exercise</a></td>
-  </tr>
-  <tr>
-    <td width="400"><a href="#">7. FE for Tree models (Random Forest, Gradient Boosting,...)</a></td>
-    <td width="144"><a href="#">PDF Slides</a></td>
-    <td width="144"><a href="#">Notebook</a></td>
-    <td width="144"><a href="#">Exercise</a></td>
-  </tr>
-  <tr>
-    <td width="400"><a href="#">8. FE for Multiplicative models (linear models, SVM, Neural Networks)</a></td>
-    <td width="144"><a href="#">PDF Slides</a></td>
-    <td width="144"><a href="#">Notebook</a></td>
-    <td width="144"><a href="#">Exercise</a></td>
-  </tr>
-  <tr>
-    <td width="400"><a href="#">9. Advanced encodings (Mean Encoding, BoxCox, QuantileTransformer)</a></td>
-    <td width="144"><a href="#">PDF Slides</a></td>
-    <td width="144"><a href="#">Notebook</a></td>
-    <td width="144"><a href="#">Exercise</a></td>
-  </tr>
-  <tr>
-    <td width="400"><a href="#">10. Kaggle challenge</a></td>
-    <td width="144"><a href="#">PDF Slides</a></td>
-    <td width="144"><a href="#">Notebook</a></td>
-    <td width="144"><a href="#">Exercise</a></td>
-  </tr>
+      <td><a href="#">6. Validation strategies (simple split, CrossValidation, Stratification)</a></td></tr>
+  <tr><td><a href="#">7. FE for Tree models (Random Forest, Gradient Boosting,...)</a></td></tr>
+  <tr><td><a href="#">8. FE for Multiplicative models (linear models, SVM, Neural Networks)</a></td></tr>
+  <tr><td><a href="#">9. Advanced encodings (Mean Encoding, BoxCox, QuantileTransformer)</a></td></tr>
+  <tr><td><a href="#">10. Kaggle challenge</a></td></tr>
   
 </table>
 
