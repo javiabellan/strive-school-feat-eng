@@ -25,27 +25,31 @@ Content for 2 weeks of class (10 days).
 
 
 
+### Remember ML: Tree models
 
-### Day 1: How to encode variables
+Models that are based on decisions (if,esle):
 
-Exits different ways to encode variables:
+- Tree models
+  - Decission trees
+  - Random Forest
+  - Gradient Boosting
+- Preprecessing needed:
+  - Numerical Variables: Do nothing
+  - Categorical Variables: Ordinal Encoding,
 
-- Categorical Variables: Ordinal Encoding, OneHot Encoding, Embedding, ...
-- Numerical Variables: MinMaxScaler, StandardScaler (normalization), ...
-- Text Variables: BoW, TFIDF
 
-Knowing each one of these encodings is fundamental before creating any model. In addition it is necessary to know which ARE THE BEST CODINGS FOR EACH TYPE OF MODEL for example, for Categorical variables it is better Ordinal enc. for the trees (Random Forest, Boosting), and OneHot for the linear models and neural networks.
+### Remember ML: Multiplicative models
+
+- Multiplicative models
+  - Linear models
+  - SVM
+  - Neural Networks
+- Preprecessing needed:
+  - Numerical Variables: Scaling or Normalization
+  - Categorical Variables: OneHot Encoding
 
 
-### Day 2: Deal with Missings & Outliers
-
-This is the day to explore the most frequent data cleaning methods.
-
-Missings can appear in different ways. Detect them is very important:
-- Null (np.NaN)
-- Constant (-1, 0, 99, 999, etc)
-
-Once they have been detected an EDA will be done with libraries as [missingno](https://github.com/ResidentMario/missingno).
+### Data Cleaning: Missings
 
 And knowing how to deal with missings is very important, the available options are the following:
 
@@ -57,30 +61,48 @@ And knowing how to deal with missings is very important, the available options a
   - Work with MissingIndicator of sklearn (adds a boolean variable indicating the imputation of another variable)
   - Work with IterativeImputer & KNNImputer (allows stronger methods of imputation based on multivariate models)
 
+### Data Cleaning: Outliers
 
 Detecting Outliers (very rare values) are also important. (by plotting a box diagram, clipping the variable by some percentil, etc). The outliers must be removed from the data so that they do not spoil the models. There are also [advanced methods of outlier detection](https://scikit-learn.org/stable/modules/outlier_detection.html) that can be taught.
 
 
+### Numerical Encoding
 
-### Day 3: FE for Several tables
+- Scaling
+  - MinMaxScaler
+  - StandardScaler
+- Normalization
+  - Log
+  - Sqrt
+  - BoxCox
+  - Jea Jonson
+  - Quantile
 
-Many times we find the data in different tables where they are related to each other by primary and foreign keys (typical storage of relational systems like SQL databases). Knowing how to combine all these data in a single table is a necessary skill to a data scientist.
+### Categorical Encoding
 
-For practice we will do:
-- Manually combine the tables (using the pandas merge or join)
-- Use libraries like featuretools
+- Ordinal Encoding
+- OneHot Encoding
+- Embedding
+- Count Encoding (aka Frequency Encoding)
+- Target Encoding (aka Mean Encoding)
+- CatBoost Encoding
 
 
+### Text Encoding
 
-### Day 4: FE for Time Series 
+- BoW
+- TFIDF
+- Ngrams
 
-Extracting temporary information when we have a timestamp (a date or date + time) is very important. In this session we work with some temporal dataset to get LAG FEATURES or LAGS.
 
-On this day we also talk about the data leakage because it is very easy to make mistakes and insert data leaks when we extract lags vars.
+### Time Series
 
-For practice we will do:
-- Manually extract lag features (using the pandas groupby)
-- Use libraries like tsfresh
+### Dimensionality Reduction
+
+### Feature selection
+
+### Feature combination
+
 
 
 
