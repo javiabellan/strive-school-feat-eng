@@ -17,3 +17,8 @@ And knowing how to deal with missings is very important, the available options a
   - Work with SimpleImputer of sklearn (allows imputate by the mean, median, most_frequent & constant)
   - Work with MissingIndicator of sklearn (adds a boolean variable indicating the imputation of another variable)
   - Work with IterativeImputer & KNNImputer (allows stronger methods of imputation based on multivariate models)
+
+
+# Data Cleaning: Outliers
+
+Detecting Outliers (very rare values) are also important. (by plotting a box diagram, clipping the variable by some percentil, etc). The outliers must be removed from the data so that they do not spoil the models. There are also [advanced methods of outlier detection](https://scikit-learn.org/stable/modules/outlier_detection.html) that can be taught.
