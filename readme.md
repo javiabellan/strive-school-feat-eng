@@ -6,7 +6,7 @@ Content for 2 weeks of class (10 days).
   <!----------------------------------- Week 1 ----------------------------------->
   <tr>
     <th width="200" rowspan="5"><h3>Week 1</h3></th>
-      <td><a href="#">1. Robust ML (Tree Models, Mult Models, Validation, ColumnTransformer, Pipelines)</a></td></tr>
+      <td><a href="/01.%20Robust%20ML%20pipeline">1. Robust ML (Tree Models, Mult Models, Validation, ColumnTransformer, Pipelines)</a></td></tr>
   <tr><td><a href="#">2. Data Cleaning: Missings & Outliers (Drop vars, impute vars)</a></td></tr>
   <tr><td><a href="#">3. Numerical encodings (MinMaxScaler, StandardScaler, BoxCox, QuantileTransformer)</a></td></tr>
   <tr><td><a href="#">4. Categorical encodings (Ordinal, Binary, OneHot, Mean Enc., CatBoost)</a></td></tr>
