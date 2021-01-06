@@ -1,9 +1,9 @@
-# Data Cleaning
+<h1 align="center">Day 2: Data Cleaning</h1>
 
 On this day we are going to explore the data cleaning methods.
 
 
-### Missings
+## ❓ Missing values
 
 Missings can appear in different ways. Detect them is very important:
 - Null (np.NaN)
@@ -25,12 +25,22 @@ Develop an intuition. You should not auomatically drop or impute missings withou
 
 
 
-### Outliers
+## 🔎 Outliers
 
-Detecting Outliers (very rare values) are also important. (by plotting a box diagram, clipping the variable by some percentil, etc). The outliers must be removed from the data so that they do not spoil the models. There are also [advanced methods of outlier detection](https://scikit-learn.org/stable/modules/outlier_detection.html) that can be taught.
+Detecting Outliers (very rare values) are also important. (by plotting a box diagram, clipping the variable by some percentil, etc). The outliers must be removed from the data so that they do not spoil the models. There are also [advanced methods of outlier detection](https://scikit-learn.org/stable/modules/outlier_detection.html) that can be taught. Common **Outliers Detection techniques** are:
+
+- Standard Deviation
+- Percentiles
+- Isolation Forest: sklearn.ensemble.IsolationForest
+
+Once they have been detected, we have to handling them. Common **Handling Outliers methods** are:
+- Remove them
+- Change to max limit
 
 
-### find similar words
+## Typos
+
+At data entry is common to introduce errors. This errors are caled typos. Detect them and correct them is very important.
 
 [fuzzywuzzy](https://github.com/seatgeek/fuzzywuzzy) is a package to find similar strings that usually are typos and errors when the data was written.
 
