@@ -27,50 +27,37 @@ Develop an intuition. You should not auomatically drop or impute missings withou
 
 ## 🔎 Outliers
 
-Detecting Outliers (very rare values) are also important. (by plotting a box diagram, clipping the variable by some percentil, etc). The outliers must be removed from the data so that they do not spoil the models. There are also [advanced methods of outlier detection](https://scikit-learn.org/stable/modules/outlier_detection.html) that can be taught. Common **Outliers Detection techniques** are:
+Detecting Outliers (very rare values) are also important. The outliers must be removed from the data so that they do not spoil the models.
 
-- Standard Deviation
-- Percentiles
-- Isolation Forest: sklearn.ensemble.IsolationForest
+
+- **Anomaly detection**: Detecting unusual observations:
+  - **Outlier detection**: The training data contains outliers which we are interested in detecting them.
+  - **Novelty detection**: The training data does not contains outliers and we are interested in detecting whether a **new** observation is an outlier.
+
+Common **Outliers Detection techniques** are:
+
+- Manual methods of Outlier detection:
+  1. Plot the distribution (boxplot, stripplot)
+  2. Then clip by:
+    - A min value and a max value.
+    - Standard Deviation.
+    - Percentiles
+- [Advanced methods](https://scikit-learn.org/stable/modules/outlier_detection.html) of Outlier detection:
+  - Isolation Forest: sklearn.ensemble.IsolationForest
+  - Local Outlier Factor: sklearn.neighbors.LocalOutlierFactor
+  - Robust covariance: sklearn.covariance.EllipticEnvelope
+
 
 Once they have been detected, we have to handling them. Common **Handling Outliers methods** are:
-- Remove them
-- Change to max limit
+- Remove them. Usually the best option.
+- Assign a value
+  - The max limit
+  - The mean
+  - Etc.
 
 
-## Typos
+## 🖋 Typos
 
 At data entry is common to introduce errors. This errors are caled typos. Detect them and correct them is very important.
 
 [fuzzywuzzy](https://github.com/seatgeek/fuzzywuzzy) is a package to find similar strings that usually are typos and errors when the data was written.
-
----
-
-### Exercises
-
-- Missings
-  1. What is the missing datatype used in pandas?
-  2. How to replace all occurences of the value 9999 to missing in pandas?
-  3. How to get the absolute number of missings for each variable in pandas?
-  4. How to get the percentage of missings for each variable in pandas?
-  5. How to drop rows with missing values?
-  6. How to drop variables with missing values?
-  7. What is the univariate imputation method in sklearn?
-  8. What is the multivariate imputation method in sklearn?
-  9. What is the best univariate imputation method to categorical variables? (Explain why)
-  10. What is the best univariate imputation method to numerical variables? (Explain why)
-
-
-### Solutions
-
-- Missings
-  1. np.NaN
-  2. df.replace(9999, np.NaN)
-  3. df.isnull().sum() or df.isna().sum()
-  4. df.isnull().sum() / len(df) or df.isna().sum() / len(df)
-  5. df.dropna(axis=0) or df.dropna(axis="index")
-  6. df.dropna(axis=1) or df.dropna(axis="columns")
-  7. SimpleImputer()
-  8. IterativeImputer and KNNImputer
-  9. Probably SimpleImputer(strategy="constant", fill_value="missing") because its creates a new category for missings.
-  10. Probably SimpleImputer with strategy="mean" or "median" but with add_indicator=True because its creates a new column indicating the missing

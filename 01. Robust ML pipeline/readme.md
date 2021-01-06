@@ -1,4 +1,4 @@
-# Day 1: Robust ML Pipeline
+<h1 align="center">Day 1: Robust ML Pipeline</h1>
 
 Training ML models is easy, but sometimes is a total mess. Following a good methodology help us a lot.
 
@@ -36,23 +36,6 @@ Models that are based on decisions (if,esle):
 - Preprecessing needed:
   - Numerical Variables: Scaling or Normalization
   - Categorical Variables: OneHot Encoding
-
-
-
-
-
-### Exercises
-
-- Validate with 10-fold stratifies cross validation
-- Make a ColumTransformer and train it
-- Export and Load the ColumTransformer in pickle
-- Export and Load the ColumTransformer in joblib
-- Make a Pipeline with a ColumTransformer and a RandomForestClassifier
-- Train the Pipeline with `fit()`
-- Export the Pipeline
-- Load the Pipeline
-
-
 
 
 
